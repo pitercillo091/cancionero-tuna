@@ -1,0 +1,14 @@
+# Android build
+android/
+node_modules/
+package-lock.json
+
+# Development files
+extract_songs.py
+songs.json
+songs_min.json
+index_template.html
+*.bat
+
+# Keep only web files
+!www/
