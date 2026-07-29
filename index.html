@@ -249,22 +249,7 @@ body {
   min-width: 45px; text-align: center;
 }
 
-/* ===== TRANSPOSE ===== */
-.transpose-row { display: none; }
-.transpose-row.visible { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
-.transpose-btn {
-  width: 32px; height: 32px; border-radius: 8px; border: none;
-  background: var(--card-bg); color: var(--text); font-size: 1.1rem;
-  font-weight: 700; cursor: pointer; display: flex; align-items: center;
-  justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-  transition: transform 0.15s;
-}
-.transpose-btn:active { transform: scale(0.9); }
-.transpose-val {
-  font-size: 0.85rem; font-weight: 700; min-width: 40px; text-align: center;
-  color: var(--text);
-}
-.transpose-val.nonzero { color: var(--accent); }
+
 </style>
 </head>
 <body>
@@ -335,13 +320,6 @@ body {
     <div class="metro-beat" id="beat2"></div>
     <div class="metro-beat" id="beat3"></div>
     <div class="metro-beat" id="beat4"></div>
-  </div>
-  <div class="controls-row transpose-row" id="transposeRow">
-    <span class="ctrl-label">Transporte</span>
-    <button class="transpose-btn" onclick="transpose(-1)" title="Bajar 1 semitono">−</button>
-    <span class="transpose-val" id="transposeVal">0</span>
-    <button class="transpose-btn" onclick="transpose(1)" title="Subir 1 semitono">+</button>
-    <button class="transpose-btn" onclick="transposeReset()" title="Reset" style="font-size:0.7rem;width:28px;height:28px;">↺</button>
   </div>
 </div>
 
@@ -457,10 +435,6 @@ function openSong(idx) {
   stopScroll();
   currentSongIdx = idx;
   const s = filteredSongs[idx];
-  currentSongCode = s.c || '';
-  transposeSemitones = 0;
-  document.getElementById('transposeVal').textContent = '0';
-  document.getElementById('transposeVal').className = 'transpose-val';
   document.getElementById('songTitle').textContent = s.t;
   document.getElementById('songMeta').textContent =
     'Letra ' + s.l + '  •  ' + (s.c ? '🎸 Con acordes' : '📝 Solo letra');
@@ -665,97 +639,11 @@ function playClick(accent) {
   osc.stop(metroAudioCtx.currentTime + 0.1);
 }
 
-/* ===== CHORD TRANSPOSER ===== */
-const CHORD_ORDER = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-const CHORD_MAP = {
-  'Do':'C','Do#':'C#','Reb':'C#','Re':'D','Re#':'D#','Mib':'D#',
-  'Mi':'E','Fa':'F','Fa#':'F#','Solb':'F#','Sol':'G','Sol#':'G#','Lab':'G#',
-  'La':'A','La#':'A#','Sib':'A#','Si':'B','Sib':'A#'
-};
-const REV_MAP = {};
-Object.entries(CHORD_MAP).forEach(([k,v]) => { if (!REV_MAP[v]) REV_MAP[v] = k; });
-
-let transposeSemitones = 0;
-let currentSongCode = '';
-
-function transpose(semitones) {
-  transposeSemitones = Math.max(-11, Math.min(11, transposeSemitones + semitones));
-  document.getElementById('transposeVal').textContent =
-    (transposeSemitones > 0 ? '+' : '') + transposeSemitones;
-  document.getElementById('transposeVal').className =
-    'transpose-val' + (transposeSemitones !== 0 ? ' nonzero' : '');
-  applyTranspose();
-}
-
-function transposeReset() {
-  transposeSemitones = 0;
-  document.getElementById('transposeVal').textContent = '0';
-  document.getElementById('transposeVal').className = 'transpose-val';
-  applyTranspose();
-}
-
-function transposeChord(chord) {
-  if (transposeSemitones === 0) return chord;
-  // Detect Spanish notation
-  let isSpanish = false;
-  let base = chord;
-  let suffix = '';
-  for (const [sp, en] of Object.entries(CHORD_MAP)) {
-    if (chord.startsWith(sp) && (chord.length === sp.length || !CHORD_ORDER.includes(chord[sp.length]))) {
-      isSpanish = true;
-      base = sp;
-      suffix = chord.substring(sp.length);
-      break;
-    }
-  }
-  if (!isSpanish) {
-    // Standard notation: extract base note + modifier
-    const m = chord.match(/^([A-G]#?b?)(.*)/);
-    if (!m) return chord;
-    base = m[1];
-    suffix = m[2];
-  }
-  // Find index
-  let idx = CHORD_ORDER.indexOf(base.replace('b','#'));
-  if (idx === -1) idx = CHORD_ORDER.indexOf(base);
-  if (idx === -1) return chord;
-  idx = (idx + transposeSemitones + 12) % 12;
-  const newBase = CHORD_ORDER[idx];
-  if (isSpanish) {
-    return (REV_MAP[newBase] || newBase) + suffix;
-  }
-  return newBase + suffix;
-}
-
-function applyTranspose() {
-  const box = document.getElementById('chordBox');
-  if (!box || !currentSongCode) return;
-  if (transposeSemitones === 0) {
-    box.innerHTML = parseChords(currentSongCode);
-    return;
-  }
-  const lines = currentSongCode.split('\n');
-  let out = '';
-  lines.forEach(line => {
-    if (!line.trim()) { out += '\n'; return; }
-    if (isChordLine(line.trim())) {
-      // Transpose each chord token
-      const transposed = line.trim().split(/\s+/).map(ch => transposeChord(ch)).join('  ');
-      out += '<span class="chord-highlight">' + esc(transposed) + '</span>\n';
-    } else {
-      out += esc(line) + '\n';
-    }
-  });
-  box.innerHTML = out;
-  box.style.fontSize = fontSize + 'px';
-}
-
-/* ===== SHOW/HIDE METRO & TRANSPOSE ===== */
+/* ===== SHOW/HIDE METRO ===== */
 function showTools(show) {
   const mr = document.getElementById('metroRow');
-  const tr = document.getElementById('transposeRow');
-  if (show) { mr.classList.add('visible'); tr.classList.add('visible'); }
-  else { mr.classList.remove('visible'); tr.classList.remove('visible'); stopMetro(); }
+  if (show) { mr.classList.add('visible'); }
+  else { mr.classList.remove('visible'); stopMetro(); }
 }
 
 /* ===== START ===== */
