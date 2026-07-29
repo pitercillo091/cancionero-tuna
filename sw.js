@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tuna-v5';
+const CACHE_NAME = 'tuna-v6';
 const ASSETS = [
   './',
   './index.html',
