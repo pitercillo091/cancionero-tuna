@@ -234,6 +234,37 @@ body {
 @media (min-width: 1024px) {
   .song-list, .song-view { max-width: 800px; }
 }
+
+/* ===== METRONOME ===== */
+.metro-row { display: none; }
+.metro-row.visible { display: flex; align-items: center; gap: 10px; margin-top: 6px; }
+.metro-beat {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--card-border); transition: background 0.1s, transform 0.1s;
+}
+.metro-beat.active { background: #e74c3c; transform: scale(1.3); }
+.metro-beat.accent { background: #f39c12; transform: scale(1.3); }
+.bpm-display {
+  font-size: 0.85rem; font-weight: 700; color: var(--accent);
+  min-width: 45px; text-align: center;
+}
+
+/* ===== TRANSPOSE ===== */
+.transpose-row { display: none; }
+.transpose-row.visible { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.transpose-btn {
+  width: 32px; height: 32px; border-radius: 8px; border: none;
+  background: var(--card-bg); color: var(--text); font-size: 1.1rem;
+  font-weight: 700; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: transform 0.15s;
+}
+.transpose-btn:active { transform: scale(0.9); }
+.transpose-val {
+  font-size: 0.85rem; font-weight: 700; min-width: 40px; text-align: center;
+  color: var(--text);
+}
+.transpose-val.nonzero { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -293,6 +324,24 @@ body {
       min="0" max="100" value="0" oninput="changeScrollSpeed(this.value)">
     <button class="ctrl-btn" id="scrollBtn" onclick="toggleScroll()" title="Auto-scroll">▶</button>
     <span class="ctrl-value" id="scrollVal">0</span>
+  </div>
+  <div class="controls-row metro-row" id="metroRow">
+    <span class="ctrl-label">Metrónomo</span>
+    <input type="range" class="ctrl-slider" id="bpmSlider"
+      min="40" max="240" value="100" oninput="changeBpm(this.value)">
+    <button class="ctrl-btn" id="metroBtn" onclick="toggleMetro()" title="Metrónomo">♫</button>
+    <span class="bpm-display" id="bpmVal">100</span>
+    <div class="metro-beat" id="beat1"></div>
+    <div class="metro-beat" id="beat2"></div>
+    <div class="metro-beat" id="beat3"></div>
+    <div class="metro-beat" id="beat4"></div>
+  </div>
+  <div class="controls-row transpose-row" id="transposeRow">
+    <span class="ctrl-label">Transporte</span>
+    <button class="transpose-btn" onclick="transpose(-1)" title="Bajar 1 semitono">−</button>
+    <span class="transpose-val" id="transposeVal">0</span>
+    <button class="transpose-btn" onclick="transpose(1)" title="Subir 1 semitono">+</button>
+    <button class="transpose-btn" onclick="transposeReset()" title="Reset" style="font-size:0.7rem;width:28px;height:28px;">↺</button>
   </div>
 </div>
 
@@ -408,6 +457,10 @@ function openSong(idx) {
   stopScroll();
   currentSongIdx = idx;
   const s = filteredSongs[idx];
+  currentSongCode = s.c || '';
+  transposeSemitones = 0;
+  document.getElementById('transposeVal').textContent = '0';
+  document.getElementById('transposeVal').className = 'transpose-val';
   document.getElementById('songTitle').textContent = s.t;
   document.getElementById('songMeta').textContent =
     'Letra ' + s.l + '  •  ' + (s.c ? '🎸 Con acordes' : '📝 Solo letra');
@@ -417,9 +470,11 @@ function openSong(idx) {
   if (s.c) {
     content.innerHTML = '<div class="chord-container" id="chordBox" style="font-size:' + fontSize + 'px">' +
       parseChords(s.c) + '</div>';
+    showTools(true);
   } else {
     content.innerHTML = '<div class="plain-lyrics" id="chordBox" style="font-size:' + fontSize + 'px">' +
       esc(s.y) + '</div>';
+    showTools(false);
   }
 
   document.getElementById('prevBtn').disabled = (idx <= 0);
@@ -479,6 +534,8 @@ function navSong(dir) {
 
 function showList() {
   stopScroll();
+  stopMetro();
+  showTools(false);
   currentSongIdx = -1;
   document.getElementById('listView').style.display = '';
   document.getElementById('songView').classList.remove('active');
@@ -546,6 +603,159 @@ function saveCfg() {
 /* ===== UTILS ===== */
 function esc(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+/* ===== METRONOME ===== */
+let metroInterval = null;
+let metroBpm = 100;
+let metroBeat = 0;
+let metroAudioCtx = null;
+
+function changeBpm(v) {
+  metroBpm = parseInt(v);
+  document.getElementById('bpmVal').textContent = metroBpm;
+  if (metroInterval) { stopMetro(); startMetro(); }
+  saveCfg();
+}
+
+function toggleMetro() {
+  if (metroInterval) stopMetro(); else startMetro();
+}
+
+function startMetro() {
+  if (!metroAudioCtx) metroAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (metroAudioCtx.state === 'suspended') metroAudioCtx.resume();
+  metroBeat = 0;
+  document.getElementById('metroBtn').classList.add('playing');
+  document.getElementById('metroBtn').textContent = '⏸';
+  tick();
+  metroInterval = setInterval(tick, 60000 / metroBpm);
+}
+
+function stopMetro() {
+  if (metroInterval) { clearInterval(metroInterval); metroInterval = null; }
+  document.getElementById('metroBtn').classList.remove('playing');
+  document.getElementById('metroBtn').textContent = '♫';
+  [1,2,3,4].forEach(i => {
+    document.getElementById('beat'+i).className = 'metro-beat';
+  });
+}
+
+function tick() {
+  metroBeat = (metroBeat % 4) + 1;
+  [1,2,3,4].forEach(i => {
+    document.getElementById('beat'+i).className = 'metro-beat';
+  });
+  const el = document.getElementById('beat' + metroBeat);
+  el.classList.add(metroBeat === 1 ? 'accent' : 'active');
+  playClick(metroBeat === 1);
+}
+
+function playClick(accent) {
+  if (!metroAudioCtx) return;
+  const osc = metroAudioCtx.createOscillator();
+  const gain = metroAudioCtx.createGain();
+  osc.connect(gain);
+  gain.connect(metroAudioCtx.destination);
+  osc.frequency.value = accent ? 1000 : 800;
+  osc.type = 'sine';
+  gain.gain.setValueAtTime(0.3, metroAudioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, metroAudioCtx.currentTime + 0.1);
+  osc.start(metroAudioCtx.currentTime);
+  osc.stop(metroAudioCtx.currentTime + 0.1);
+}
+
+/* ===== CHORD TRANSPOSER ===== */
+const CHORD_ORDER = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const CHORD_MAP = {
+  'Do':'C','Do#':'C#','Reb':'C#','Re':'D','Re#':'D#','Mib':'D#',
+  'Mi':'E','Fa':'F','Fa#':'F#','Solb':'F#','Sol':'G','Sol#':'G#','Lab':'G#',
+  'La':'A','La#':'A#','Sib':'A#','Si':'B','Sib':'A#'
+};
+const REV_MAP = {};
+Object.entries(CHORD_MAP).forEach(([k,v]) => { if (!REV_MAP[v]) REV_MAP[v] = k; });
+
+let transposeSemitones = 0;
+let currentSongCode = '';
+
+function transpose(semitones) {
+  transposeSemitones = Math.max(-11, Math.min(11, transposeSemitones + semitones));
+  document.getElementById('transposeVal').textContent =
+    (transposeSemitones > 0 ? '+' : '') + transposeSemitones;
+  document.getElementById('transposeVal').className =
+    'transpose-val' + (transposeSemitones !== 0 ? ' nonzero' : '');
+  applyTranspose();
+}
+
+function transposeReset() {
+  transposeSemitones = 0;
+  document.getElementById('transposeVal').textContent = '0';
+  document.getElementById('transposeVal').className = 'transpose-val';
+  applyTranspose();
+}
+
+function transposeChord(chord) {
+  if (transposeSemitones === 0) return chord;
+  // Detect Spanish notation
+  let isSpanish = false;
+  let base = chord;
+  let suffix = '';
+  for (const [sp, en] of Object.entries(CHORD_MAP)) {
+    if (chord.startsWith(sp) && (chord.length === sp.length || !CHORD_ORDER.includes(chord[sp.length]))) {
+      isSpanish = true;
+      base = sp;
+      suffix = chord.substring(sp.length);
+      break;
+    }
+  }
+  if (!isSpanish) {
+    // Standard notation: extract base note + modifier
+    const m = chord.match(/^([A-G]#?b?)(.*)/);
+    if (!m) return chord;
+    base = m[1];
+    suffix = m[2];
+  }
+  // Find index
+  let idx = CHORD_ORDER.indexOf(base.replace('b','#'));
+  if (idx === -1) idx = CHORD_ORDER.indexOf(base);
+  if (idx === -1) return chord;
+  idx = (idx + transposeSemitones + 12) % 12;
+  const newBase = CHORD_ORDER[idx];
+  if (isSpanish) {
+    return (REV_MAP[newBase] || newBase) + suffix;
+  }
+  return newBase + suffix;
+}
+
+function applyTranspose() {
+  const box = document.getElementById('chordBox');
+  if (!box || !currentSongCode) return;
+  if (transposeSemitones === 0) {
+    box.innerHTML = parseChords(currentSongCode);
+    return;
+  }
+  const lines = currentSongCode.split('\n');
+  let out = '';
+  lines.forEach(line => {
+    if (!line.trim()) { out += '\n'; return; }
+    if (isChordLine(line.trim())) {
+      // Transpose each chord token
+      const transposed = line.trim().split(/\s+/).map(ch => transposeChord(ch)).join('  ');
+      out += '<span class="chord-highlight">' + esc(transposed) + '</span>\n';
+    } else {
+      out += esc(line) + '\n';
+    }
+  });
+  box.innerHTML = out;
+  box.style.fontSize = fontSize + 'px';
+}
+
+/* ===== SHOW/HIDE METRO & TRANSPOSE ===== */
+function showTools(show) {
+  const mr = document.getElementById('metroRow');
+  const tr = document.getElementById('transposeRow');
+  if (show) { mr.classList.add('visible'); tr.classList.add('visible'); }
+  else { mr.classList.remove('visible'); tr.classList.remove('visible'); stopMetro(); }
 }
 
 /* ===== START ===== */
