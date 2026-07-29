@@ -437,7 +437,7 @@ function openSong(idx) {
   const s = filteredSongs[idx];
   document.getElementById('songTitle').textContent = s.t;
   document.getElementById('songMeta').textContent =
-    'Letra ' + s.l + '  •  ' + (s.c ? '🎸 Con acordes' : '📝 Solo letra');
+    'Letra ' + s.l + '  •  ' + (s.c ? '🎵 Con acordes' : '📝 Solo letra');
   document.getElementById('headerTitle').textContent = s.t;
 
   const content = document.getElementById('songContent');
