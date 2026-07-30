@@ -2823,12 +2823,8 @@ function renderTabList() {
 }
 
 function openPdf(url, title, filename) {
-  document.getElementById('pdfTitle').textContent = title;
-  document.getElementById('pdfFrame').src = url;
-  document.getElementById('pdfDownload').href = url;
-  document.getElementById('pdfDownload').download = filename;
-  document.getElementById('pdfNewTab').href = url;
-  document.getElementById('pdfModal').classList.add('active');
+  // Open PDF directly in new tab - most reliable method
+  window.open(url, '_blank');
 }
 
 function closePdf() {
