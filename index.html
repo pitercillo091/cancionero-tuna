@@ -286,6 +286,58 @@ body {
 .tuner-start-btn:active { transform: scale(0.95); }
 .tuner-start-btn.running { background: #7b241c; box-shadow: 0 4px 12px rgba(123,36,28,0.4); }
 
+/* ===== HERO BANNER ===== */
+.hero-banner {
+  position: relative; width: 100%; overflow: hidden;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: var(--shadow); margin-bottom: 4px;
+}
+.hero-banner img {
+  width: 100%; height: auto; display: block;
+  object-fit: cover; max-height: 280px;
+}
+.hero-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  padding: 30px 20px 16px; color: #fff;
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.hero-overlay-left h2 {
+  font-size: 1.6rem; font-weight: 800; margin: 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.hero-overlay-left p {
+  font-size: 0.9rem; margin: 4px 0 0; opacity: 0.9;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+.hero-overlay-right { text-align: right; flex-shrink: 0; }
+.hero-contact {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+  border-radius: 24px; padding: 8px 16px 8px 12px;
+  border: 1px solid rgba(255,255,255,0.25); text-decoration: none; color: #fff;
+  transition: background 0.2s;
+}
+.hero-contact:active { background: rgba(255,255,255,0.25); }
+.hero-contact img {
+  width: 28px; height: 28px; flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+}
+.hero-contact-text { font-size: 0.75rem; line-height: 1.2; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+.hero-contact-label { font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.65rem; opacity: 0.85; }
+.hero-contact-phone { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.5px; color: #ff4444;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+.dark .hero-banner img { filter: brightness(0.8); }
+@media (max-width: 600px) {
+  .hero-banner img { max-height: 200px; }
+  .hero-overlay { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hero-overlay-right { text-align: left; }
+  .hero-overlay-left h2 { font-size: 1.3rem; }
+  .hero-contact { padding: 6px 14px 6px 10px; }
+  .hero-contact img { width: 24px; height: 24px; }
+  .hero-contact-phone { font-size: 0.95rem; }
+}
+
 /* ===== SONG LIST ===== */
 .song-list { padding: 8px 16px 110px; }
 .song-letter-header {
@@ -478,6 +530,25 @@ body {
 
 <!-- SONG LIST -->
 <div id="listView">
+  <div class="hero-banner">
+    <img src="img/banner.jpg" srcset="img/banner-sm.jpg 600w, img/banner.jpg 1200w"
+      sizes="100vw" alt="La Tuna - Ska Logistik" loading="eager">
+    <div class="hero-overlay">
+      <div class="hero-overlay-left">
+        <h2>Cancionero de la Tuna</h2>
+        <p>355 canciones con acordes y letras para guitarra</p>
+      </div>
+      <div class="hero-overlay-right">
+        <a href="https://wa.me/34622358110" target="_blank" class="hero-contact">
+          <img src="img/whatsapp.png" alt="WhatsApp">
+          <div class="hero-contact-text">
+            <div class="hero-contact-label">Contrataciones</div>
+            <div class="hero-contact-phone">622 358 110</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="song-list" id="songList"></div>
 </div>
 
