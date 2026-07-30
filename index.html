@@ -48,6 +48,15 @@ body {
   object-fit: cover; flex-shrink: 0;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
+.header-link {
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--accent); text-decoration: none;
+  white-space: nowrap; padding: 6px 12px; border-radius: 20px;
+  border: 2px solid var(--accent); transition: all 0.2s;
+}
+.header-link:hover, .header-link:active {
+  background: var(--accent); color: #fff;
+}
 .header-btn {
   width: 40px; height: 40px; border-radius: 50%; border: none;
   background: var(--card-bg); color: var(--text); font-size: 1.15rem;
@@ -263,6 +272,7 @@ body {
 <div class="header">
   <img src="img/logo-header.jpg" alt="La Tuna" class="header-logo">
   <h1 id="headerTitle">Cancionero de la Tuna</h1>
+  <a href="https://aquiestalatuna.es/" target="_blank" class="header-link">VISITA NUESTRA WEB</a>
   <button class="header-btn" onclick="toggleDark()" title="Modo oscuro/claro" id="darkBtn">🌓</button>
 </div>
 
