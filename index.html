@@ -172,12 +172,12 @@ body {
 .pdf-modal-body iframe { width: 100%; height: 100%; border: none; }
 
 /* ===== TUNER ===== */
-.tuner-link { background: #2980b9; border-color: #2980b9; }
-.tuner-link:hover { background: transparent; color: #2980b9; }
+.tuner-link { background: #c0392b; border-color: #c0392b; }
+.tuner-link:hover { background: transparent; color: #c0392b; }
 .tuner-section { display: none; }
 .tuner-section.active { display: block; }
 .tuner-banner {
-  background: linear-gradient(135deg, #1a5276, #2980b9);
+  background: linear-gradient(135deg, #7b241c, #c0392b);
   color: #fff; padding: 20px; text-align: center;
   border-radius: 0 0 var(--radius) var(--radius);
 }
@@ -192,77 +192,99 @@ body {
   background: var(--card-bg); color: var(--text); font-weight: 700;
   font-size: 0.9rem; cursor: pointer; transition: all 0.2s;
 }
-.tuner-inst-btn.active { background: #2980b9; color: #fff; border-color: #2980b9; }
+.tuner-inst-btn.active { background: #c0392b; color: #fff; border-color: #c0392b; }
 .tuner-display {
-  width: 280px; height: 280px; margin: 0 auto 20px;
+  width: 300px; height: 300px; margin: 0 auto 20px;
   position: relative;
 }
 .tuner-meter {
   width: 100%; height: 100%; border-radius: 50%;
-  background: var(--card-bg); border: 4px solid var(--card-border);
-  box-shadow: var(--shadow); position: relative; overflow: hidden;
+  background: var(--card-bg);
+  border: 6px solid var(--card-border);
+  box-shadow: 0 0 0 3px rgba(192,57,43,0.15), var(--shadow);
+  position: relative; overflow: visible;
+}
+.tuner-meter-ring {
+  position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+  border-radius: 50%; border: 3px solid rgba(192,57,43,0.12);
+}
+.tuner-meter-ring2 {
+  position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px;
+  border-radius: 50%; border: 2px solid rgba(192,57,43,0.08);
 }
 .tuner-needle {
   position: absolute; bottom: 50%; left: 50%;
-  width: 4px; height: 45%; background: var(--text);
+  width: 3px; height: 42%; background: #555;
   transform-origin: bottom center; transform: translateX(-50%) rotate(0deg);
-  transition: transform 0.15s ease-out; border-radius: 2px;
+  transition: transform 0.12s ease-out; border-radius: 3px 3px 0 0;
+}
+.tuner-needle::after {
+  content: ''; position: absolute; bottom: -6px; left: 50%;
+  transform: translateX(-50%); width: 12px; height: 12px;
+  border-radius: 50%; background: #555;
 }
 .tuner-needle.in-tune { background: #27ae60; }
+.tuner-needle.in-tune::after { background: #27ae60; }
 .tuner-needle.sharp { background: #e74c3c; }
+.tuner-needle.sharp::after { background: #e74c3c; }
 .tuner-needle.flat { background: #e67e22; }
+.tuner-needle.flat::after { background: #e67e22; }
 .tuner-center-mark {
-  position: absolute; top: 8%; left: 50%; transform: translateX(-50%);
-  width: 4px; height: 20px; background: #27ae60; border-radius: 2px;
+  position: absolute; top: 6%; left: 50%; transform: translateX(-50%);
+  width: 6px; height: 24px; background: #c0392b; border-radius: 3px;
 }
 .tuner-ticks {
   position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
 .tuner-tick {
   position: absolute; bottom: 50%; left: 50%;
-  width: 2px; height: 12px; background: var(--text2);
-  transform-origin: bottom center; opacity: 0.4;
+  width: 2px; height: 10px; background: var(--text2);
+  transform-origin: bottom center; opacity: 0.3;
 }
-.tuner-tick.major { height: 18px; opacity: 0.7; background: var(--text); }
+.tuner-tick.major { height: 16px; opacity: 0.5; background: var(--text); width: 3px; }
 .tuner-note-display {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   text-align: center;
 }
 .tuner-note-name {
-  font-size: 3rem; font-weight: 900; color: var(--text); line-height: 1;
+  font-size: 3.5rem; font-weight: 900; color: var(--text); line-height: 1;
 }
 .tuner-note-name.in-tune { color: #27ae60; }
 .tuner-note-name.sharp { color: #e74c3c; }
 .tuner-note-name.flat { color: #e67e22; }
-.tuner-freq { font-size: 0.8rem; color: var(--text2); margin-top: 2px; }
+.tuner-freq { font-size: 0.85rem; color: var(--text2); margin-top: 4px; }
 .tuner-status {
   font-size: 1rem; font-weight: 700; margin: 10px 0 20px;
-  padding: 8px 20px; border-radius: 20px; display: inline-block;
+  padding: 8px 24px; border-radius: 20px; display: inline-block;
 }
 .tuner-status.in-tune { background: #d5f5e3; color: #27ae60; }
 .tuner-status.sharp { background: #fadbd8; color: #e74c3c; }
 .tuner-status.flat { background: #fdebd0; color: #e67e22; }
 .tuner-status.waiting { background: var(--bg2); color: var(--text2); }
 .tuner-strings {
-  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+  display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
   margin-top: 16px;
 }
 .tuner-string-btn {
-  width: 50px; height: 50px; border-radius: 50%; border: 3px solid var(--card-border);
+  width: 54px; height: 54px; border-radius: 50%;
+  border: 3px solid var(--card-border);
   background: var(--card-bg); color: var(--text); font-weight: 900;
-  font-size: 1rem; cursor: pointer; display: flex; align-items: center;
-  justify-content: center; transition: all 0.2s; box-shadow: var(--shadow);
+  font-size: 0.85rem; cursor: pointer; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; transition: all 0.2s;
+  box-shadow: var(--shadow); line-height: 1.1;
 }
-.tuner-string-btn.active { border-color: #2980b9; background: #2980b9; color: #fff; }
+.tuner-string-btn .str-note { font-size: 1rem; }
+.tuner-string-btn .str-label { font-size: 0.55rem; opacity: 0.6; }
+.tuner-string-btn.active { border-color: #c0392b; background: #c0392b; color: #fff; }
 .tuner-string-btn.in-tune { border-color: #27ae60; background: #27ae60; color: #fff; }
 .tuner-start-btn {
   padding: 14px 32px; border-radius: 12px; border: none;
-  background: #2980b9; color: #fff; font-size: 1.1rem; font-weight: 700;
-  cursor: pointer; box-shadow: 0 4px 12px rgba(41,128,185,0.3);
+  background: #c0392b; color: #fff; font-size: 1.1rem; font-weight: 700;
+  cursor: pointer; box-shadow: 0 4px 12px rgba(192,57,43,0.3);
   transition: all 0.2s; margin-bottom: 20px;
 }
 .tuner-start-btn:active { transform: scale(0.95); }
-.tuner-start-btn.running { background: #e74c3c; box-shadow: 0 4px 12px rgba(231,76,60,0.3); }
+.tuner-start-btn.running { background: #7b241c; box-shadow: 0 4px 12px rgba(123,36,28,0.4); }
 
 /* ===== SONG LIST ===== */
 .song-list { padding: 8px 16px 110px; }
@@ -510,12 +532,13 @@ body {
   <div class="tuner-body">
     <div class="tuner-instrument-btns">
       <button class="tuner-inst-btn active" onclick="setInstrument('guitar')">🎸 Guitarra</button>
-      <button class="tuner-inst-btn" onclick="setInstrument('bandurria')">🎵 Bandurria</button>
-      <button class="tuner-inst-btn" onclick="setInstrument('laud')">🎶 Laud</button>
+      <button class="tuner-inst-btn" onclick="setInstrument('bandurria')">🎵 Bandurria / Laud</button>
     </div>
     <button class="tuner-start-btn" id="tunerStartBtn" onclick="toggleTuner()">🎤 Iniciar Afinador</button>
     <div class="tuner-display">
       <div class="tuner-meter">
+        <div class="tuner-meter-ring"></div>
+        <div class="tuner-meter-ring2"></div>
         <div class="tuner-center-mark"></div>
         <div class="tuner-ticks" id="tunerTicks"></div>
         <div class="tuner-needle" id="tunerNeedle"></div>
@@ -885,20 +908,13 @@ const TUNINGS = {
     {note:'B3',freq:246.94,label:'2ª B'},
     {note:'E4',freq:329.63,label:'1ª E'}
   ]},
-  bandurria: { name: 'Bandurria', strings: [
-    {note:'G4',freq:392,label:'6ª Sol'},
-    {note:'D4',freq:293.66,label:'5ª Re'},
-    {note:'A3',freq:220,label:'4ª La'},
-    {note:'E3',freq:164.81,label:'3ª Mi'},
-    {note:'B2',freq:123.47,label:'2ª Si'},
-    {note:'G2',freq:98,label:'1ª Sol'}
-  ]},
-  laud: { name: 'Laud', strings: [
-    {note:'A3',freq:220,label:'5ª La'},
-    {note:'E3',freq:164.81,label:'4ª Mi'},
-    {note:'B2',freq:123.47,label:'3ª Si'},
-    {note:'G2',freq:98,label:'2ª Sol'},
-    {note:'D2',freq:73.42,label:'1ª Re'}
+  bandurria: { name: 'Bandurria / Laud', strings: [
+    {note:'G#3',freq:207.65,label:'6ª Sol#'},
+    {note:'C#4',freq:277.18,label:'5ª Do#'},
+    {note:'F#4',freq:369.99,label:'4ª Fa#'},
+    {note:'B4',freq:493.88,label:'3ª Si'},
+    {note:'E5',freq:659.25,label:'2ª Mi'},
+    {note:'A5',freq:880,label:'1ª La'}
   ]}
 };
 
@@ -920,10 +936,15 @@ function setInstrument(inst) {
 function renderStrings() {
   const strings = TUNINGS[currentInstrument].strings;
   const container = document.getElementById('tunerStrings');
-  container.innerHTML = strings.map(s =>
-    '<div class="tuner-string-btn" id="str_' + s.note + '" onclick="playReference(\'' + s.freq + '\')" title="' + s.note + ' (' + s.freq + ' Hz)">' + s.label + '</div>'
-  ).join('');
-  // Add tick marks
+  container.innerHTML = strings.map(s => {
+    const parts = s.label.split(' ');
+    const numPart = parts[0] || '';
+    const namePart = parts.slice(1).join(' ') || s.note;
+    return '<div class="tuner-string-btn" id="str_' + s.note + '" onclick="playReference(\'' + s.freq + '\')" title="' + s.note + ' (' + s.freq + ' Hz)">' +
+      '<span class="str-note">' + namePart + '</span>' +
+      '<span class="str-label">' + numPart + '</span>' +
+      '</div>';
+  }).join('');
   renderTicks();
 }
 
