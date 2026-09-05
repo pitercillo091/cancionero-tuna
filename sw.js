@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tuna-v8';
+const CACHE_NAME = 'tuna-v9';
 const ASSETS = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const ASSETS = [
   './img/icon-192.jpg',
   './img/icon-512.jpg',
   './img/logo-header.jpg',
+  './img/stunafy-logo.png',
   './img/whatsapp.png',
   './icon-192.png',
   './icon-512.png'
