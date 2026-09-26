@@ -4,7 +4,8 @@ App web interactiva para practicar acordes de guitarra con canciones de la Tuna.
 
 ## Características
 
-- **352 canciones** con acordes y letras extraídas del cancionero oficial
+- **545 canciones** con letras y acordes
+- Selector de versiones de acordes cuando una canción tiene varias transcripciones
 - **Acordes resaltados** en rojo sobre la letra (estilo lacuerda.net)
 - **Búsqueda** por nombre de canción
 - **Navegación alfabética** por letras (A-Y)
