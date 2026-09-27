@@ -395,6 +395,29 @@ body {
 }
 .version-selector button.active { border-color: var(--accent); background: var(--accent); color: #fff; }
 
+.transpose-controls {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin: 8px 0 10px; padding: 8px 10px;
+  border: 1px solid var(--card-border); border-radius: var(--radius);
+  background: var(--card-bg); color: var(--text2);
+}
+.transpose-label { font-size: 0.82rem; font-weight: 600; }
+.transpose-controls button {
+  min-width: 34px; min-height: 34px; border: 1px solid var(--card-border);
+  border-radius: 8px; background: var(--bg2); color: var(--text);
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+.transpose-controls button:active { background: var(--hover); transform: scale(0.96); }
+.transpose-value { min-width: 108px; text-align: center; font-size: 0.82rem; }
+.transpose-reset { padding: 0 9px; color: var(--accent) !important; font-size: 0.78rem !important; }
+.transpose-note { margin: -3px 0 8px; color: var(--text2); font-size: 0.75rem; text-align: center; }
+@media (max-width: 420px) {
+  .transpose-controls { gap: 6px; padding: 7px 8px; }
+  .transpose-label, .transpose-value { font-size: 0.76rem; }
+  .transpose-value { min-width: 92px; }
+  .transpose-reset { padding: 0 6px; }
+}
+
 .back-btn {
   display: inline-flex; align-items: center; gap: 4px;
   background: none; border: none; color: var(--accent);
@@ -697,6 +720,7 @@ const SONGS = [{"t":"A la feria de las flores","l":"A","c":"RE\n        LA7\n   
 let currentLetter = '';
 let currentSongIdx = -1;
 let currentVersionIdx = 0;
+let currentTranspose = 0;
 let filteredSongs = [];
 let scrollInterval = null;
 let fontSize = 18;
@@ -820,6 +844,7 @@ function openSong(idx) {
   stopScroll();
   currentSongIdx = idx;
   currentVersionIdx = 0;
+  currentTranspose = 0;
   const s = filteredSongs[idx];
   document.getElementById('songTitle').textContent = s.t;
   document.getElementById('songMeta').textContent =
@@ -853,41 +878,122 @@ function renderSongContent(song) {
     : '';
   const code = versions ? versions[currentVersionIdx].c : song.c;
   if (code) {
-    content.innerHTML = selector + '<div class="chord-container" id="chordBox" style="font-size:' + fontSize + 'px">' +
-      parseChords(code) + '</div>';
+    const controls = hasChordRows(code)
+      ? '<div class="transpose-controls" role="group" aria-label="Transponer acordes">' +
+        '<span class="transpose-label">Tonalidad</span>' +
+        '<button type="button" onclick="changeTranspose(-1)" aria-label="Bajar un semitono">−</button>' +
+        '<output class="transpose-value" aria-live="polite">' + transposeLabel() + '</output>' +
+        '<button type="button" onclick="changeTranspose(1)" aria-label="Subir un semitono">+</button>' +
+        '<button type="button" class="transpose-reset" onclick="resetTranspose()">Original</button>' +
+        '</div>'
+      : '';
+    const note = currentTranspose && hasUntransposableRows(code)
+      ? '<div class="transpose-note" role="status">Las filas con texto o formato especial se mantienen sin cambios.</div>'
+      : '';
+    content.innerHTML = controls + note + selector + '<div class="chord-container" id="chordBox" style="font-size:' + fontSize + 'px">' +
+      parseChords(transposeChordCode(code, currentTranspose)) + '</div>';
   } else {
     content.innerHTML = selector + '<div class="plain-lyrics" id="chordBox" style="font-size:' + fontSize + 'px">' +
       esc(song.y) + '</div>';
   }
 }
 
-function selectSongVersion(index) {
+function transposeLabel() {
+  if (currentTranspose === 0) return 'Original';
+  const sign = currentTranspose > 0 ? '+' : '−';
+  const amount = Math.abs(currentTranspose);
+  return sign + amount + ' semitono' + (amount === 1 ? '' : 's');
+}
+
+function changeTranspose(amount) {
+  currentTranspose = Math.max(-24, Math.min(24, currentTranspose + amount));
   const song = filteredSongs[currentSongIdx];
-  if (!song || !song.v || index < 0 || index >= song.v.length || index === currentVersionIdx) return;
-  const scrollPosition = window.scrollY;
-  currentVersionIdx = index;
-  renderSongContent(song);
-  window.scrollTo(0, scrollPosition);
+  if (song) renderSongContent(song);
 }
 
-function renderSongContent(song) {
-  const content = document.getElementById('songContent');
-  const versions = song.v && song.v.length > 1 ? song.v : null;
-  const selector = versions
-    ? '<div class="version-selector" role="group" aria-label="Versión de acordes">' +
-      versions.map((version, i) => '<button type="button" class="' +
-        (i === currentVersionIdx ? 'active' : '') + '" aria-pressed="' +
-        (i === currentVersionIdx ? 'true' : 'false') + '" onclick="selectSongVersion(' + i + ')">' +
-        esc(version.label || ('Versión ' + (i + 1))) + '</button>').join('') + '</div>'
-    : '';
-  const code = versions ? versions[currentVersionIdx].c : song.c;
-  if (code) {
-    content.innerHTML = selector + '<div class="chord-container" id="chordBox" style="font-size:' + fontSize + 'px">' +
-      parseChords(code) + '</div>';
-  } else {
-    content.innerHTML = selector + '<div class="plain-lyrics" id="chordBox" style="font-size:' + fontSize + 'px">' +
-      esc(song.y) + '</div>';
+function resetTranspose() {
+  currentTranspose = 0;
+  const song = filteredSongs[currentSongIdx];
+  if (song) renderSongContent(song);
+}
+
+function hasChordRows(code) {
+  return code.split('\n').some(line => isChordLine(line.trim()));
+}
+
+function hasUntransposableRows(code) {
+  return code.split('\n').some(line => {
+    if (!isChordLine(line.trim())) return false;
+    return line.trim().split(/\s+/).some(token => transposeChordToken(token, 1) === null);
+  });
+}
+
+function transposeChordCode(code, semitones) {
+  if (!semitones) return code;
+  return code.split('\n').map(line => {
+    const trimmed = line.trim();
+    if (!isChordLine(trimmed)) return line;
+    const tokens = line.split(/(\s+)/);
+    const chordTokens = tokens.filter(token => token && !/^\s+$/.test(token));
+    const converted = chordTokens.map(token => transposeChordToken(token, semitones));
+    if (!converted.length || converted.some(token => token === null)) return line;
+    let index = 0;
+    return tokens.map(token => token && !/^\s+$/.test(token) ? converted[index++] : token).join('');
+  }).join('\n');
+}
+
+function transposeChordToken(token, semitones) {
+  if (/^[-–—/]+$/.test(token)) return token;
+  if (token.endsWith('/') && !token.slice(0, -1).includes('/')) {
+    const chord = transposeChordCore(token.slice(0, -1), semitones);
+    return chord === null ? null : chord + '/';
   }
+  if (/^(?:\d{1,2}|[.]+|x\d+|M[ÚU]SICA:|INTRO(?:DUCCI[ÓO]N)?:|INSTRUMENTAL:|CODA:|BIS)$/i.test(token)) return token;
+  const wrapped = token.match(/^([([{]*)(.+?)([)\]}.,;:!?*]*)$/);
+  if (!wrapped) return null;
+  if (/^(?:\d{1,2}|x\d+|M[ÚU]SICA:|INTRO(?:DUCCI[ÓO]N)?:|INSTRUMENTAL:|CODA:|BIS)$/i.test(wrapped[2])) return token;
+  const converted = transposeChordCore(wrapped[2], semitones);
+  return converted === null ? null : wrapped[1] + converted + wrapped[3];
+}
+
+function transposeChordCore(chord, semitones) {
+  const direct = transposeSingleChord(chord, semitones);
+  if (direct !== null) return direct;
+  for (const separator of ['/', '-']) {
+    const parts = chord.split(separator);
+    if (parts.length < 2) continue;
+    const converted = parts.map(part => transposeSingleChord(part, semitones));
+    if (converted.every(part => part !== null)) return converted.join(separator);
+  }
+  return null;
+}
+
+function transposeSingleChord(chord, semitones) {
+  const match = chord.match(/^(Do|Re|Mi|Fa|Sol|La|Si|[A-G])([#b♯♭]?)(.*)$/i);
+  if (!match) return null;
+  const root = match[1], accidental = match[2], suffix = match[3];
+  const suffixPattern = /^(?:maj|min|dim|aug|sus\d*|add\d+|mM|m|M|dis|dism|d|°|ø|\+)?(?:\d+(?:\/\d+)?(?:[#b♯♭]\d+)*(?:M|m)?(?:sus\d*)?(?:add\d+)?)?(?:\+|°|ø)?$/i;
+  if (!suffixPattern.test(suffix)) return null;
+
+  const noteNames = { do: 0, c: 0, re: 2, d: 2, mi: 4, e: 4, fa: 5, f: 5, sol: 7, g: 7, la: 9, a: 9, si: 11, b: 11 };
+  let pitch = noteNames[root.toLowerCase()];
+  if (pitch === undefined) return null;
+  if (accidental === '#' || accidental === '♯') pitch++;
+  if (accidental.toLowerCase() === 'b' || accidental === '♭') pitch--;
+  pitch = ((pitch + semitones) % 12 + 12) % 12;
+
+  const rootKey = root.toLowerCase();
+  const spanish = ['do', 're', 'mi', 'fa', 'sol', 'la', 'si'].includes(rootKey);
+  const preferSharp = accidental === '#' || accidental === '♯' || (!accidental && !spanish);
+  const names = spanish
+    ? (preferSharp ? ['Do', 'Do#', 'Re', 'Re#', 'Mi', 'Fa', 'Fa#', 'Sol', 'Sol#', 'La', 'La#', 'Si'] : ['Do', 'Reb', 'Re', 'Mib', 'Mi', 'Fa', 'Solb', 'Sol', 'Lab', 'La', 'Sib', 'Si'])
+    : (preferSharp ? ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'] : ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B']);
+  let transposedRoot = names[pitch];
+  if (accidental === '♯') transposedRoot = transposedRoot.replace('#', '♯');
+  if (accidental === '♭') transposedRoot = transposedRoot.replace('b', '♭');
+  if (root === root.toUpperCase()) transposedRoot = transposedRoot.toUpperCase();
+  else if (root === root.toLowerCase()) transposedRoot = transposedRoot.toLowerCase();
+  return transposedRoot + suffix;
 }
 
 function selectSongVersion(index) {
@@ -925,11 +1031,14 @@ function isChordLine(line) {
 
 function isChord(tok) {
   const chord = tok.replace(/[♯]/g, '#').replace(/[♭]/g, 'b').replace(/[()\[\]]/g, '');
-  if (chord.includes('/')) return chord.split('/').every(isChord);
+  if (chord.includes('/')) {
+    if (transposeSingleChord(chord, 0) !== null) return true;
+    return chord.split('/').every(isChord);
+  }
   if (/^[A-G](?:#|b)?(?:m|M|maj|min|dim|aug|sus[24]?|add\d+)?\d*(?:#|b)?$/i.test(chord)) return true;
   if (/^(Do|Re|Mi|Fa|Sol|La|Si)(?:#|b)?(?:m|M|maj|min|dim|aug|sus[24]?|add\d+)?\d*(?:#|b)?$/i.test(chord)) return true;
-  if (/^\d{1,2}$/.test(chord) && parseInt(chord) <= 13) return true;
-  return false;
+  if (/^\d{1,2}$/.test(chord) && parseInt(chord, 10) <= 13) return true;
+  return transposeSingleChord(chord, 0) !== null;
 }
 
 /* ===== NAVIGATION ===== */
