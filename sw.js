@@ -1,7 +1,9 @@
-const CACHE_NAME = 'tuna-v12';
+const CACHE_NAME = 'tuna-v15';
 const ASSETS = [
   './',
   './index.html',
+  './upv_aligned.js',
+  './word_aligned.js',
   './manifest.json',
   './img/banner.jpg',
   './img/banner-sm.jpg',

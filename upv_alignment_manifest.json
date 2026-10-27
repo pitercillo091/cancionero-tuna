@@ -1,0 +1,12 @@
+{
+  "description": "Excepciones verificadas a nivel de letra donde la transcripción de acordes UPV constituye una variante separada. La extracción solo aplica estas entradas si vuelve a confirmar título único y letra equivalente.",
+  "newVersions": {
+    "A0029": "La ficha UPV contiene introducción y repeticiones de acordes que no están en la versión actual.",
+    "A0019": "La ficha UPV incluye una secuencia inicial adicional de acordes.",
+    "B0026": "La ficha UPV incluye una secuencia inicial adicional de acordes.",
+    "J0001": "La ficha UPV contiene una repetición inicial de la progresión.",
+    "B0017": "La secuencia de acordes de la ficha UPV difiere de la versión actual.",
+    "T0019": "La secuencia de acordes de la ficha UPV difiere de la versión actual.",
+    "Y0005": "La ficha UPV contiene una secuencia de cambios distinta de la versión actual."
+  }
+}

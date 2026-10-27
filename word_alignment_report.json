@@ -1,0 +1,1212 @@
+{
+  "source_document": "Cancionero Tuna en revision.docx (local copy)",
+  "notion_status": "The Notion page was unavailable to the connected account; current remote document state is unverified.",
+  "source_entries": 411,
+  "counts": {
+    "aligned": 244,
+    "needs_manual_chord_review": 57,
+    "needs_manual_lyric_review": 83,
+    "upv_already_aligned": 5,
+    "without_chords": 22
+  },
+  "aligned_songs": [
+    "A la feria de las flores",
+    "A los bosques",
+    "A unos ojos",
+    "Abanico español",
+    "Acurrúcame",
+    "Acércate más",
+    "Adelita",
+    "Adiós muchachos",
+    "Agua del pozo",
+    "Alicantina",
+    "Allá en el rancho grande",
+    "Alma de Dios (El mendigo errante)",
+    "Alma, corazón y vida",
+    "Amalia",
+    "Amanecer borinqueño",
+    "Amanecí en tus brazos",
+    "Amigo",
+    "Aquella tarde",
+    "Aquellos ojos verdes",
+    "Aquí está la tuna",
+    "Asturianina",
+    "Asturias, patria querida",
+    "Ave María no Morro",
+    "Bajamar",
+    "Barlovento - Estanislao",
+    "Barrio brujo",
+    "Basura",
+    "Besa que te besa",
+    "Bolero de los celos",
+    "Caballo viejo",
+    "Callecita encendida",
+    "Calles sin rumbo",
+    "Camarera de mi amor",
+    "Camino del Santuario",
+    "Camino verde",
+    "Campanera",
+    "Canción con todos",
+    "Cantinero de Cuba",
+    "Carmentea",
+    "Carnavalito",
+    "Carolina",
+    "Cartagenera",
+    "Celosa",
+    "Chan chan",
+    "Chipi-Chipi",
+    "Claveles olorosos (La Mari Pepa)",
+    "Como pájaros en el aire",
+    "Confraternidad",
+    "Contigo en la distancia",
+    "Corazón, corazón",
+    "Cuando salí de Cuba",
+    "Cucurrucucú, Paloma",
+    "Cumpleaños feliz",
+    "Cómo imaginar",
+    "Dama de España",
+    "De Esperanza a Taganana",
+    "Decid que sí",
+    "Del sur al litoral",
+    "Despierta mexicano",
+    "Déjate querer",
+    "Días de albahaca",
+    "El Triste",
+    "El beso",
+    "El borrachito",
+    "El chotis del feo",
+    "El cubata",
+    "El día que me quieras",
+    "El gallo de la pasión",
+    "El manisero",
+    "El menú",
+    "El milagro de tus ojos",
+    "El parque",
+    "El ruiseñor",
+    "El toro y la luna",
+    "El trovador",
+    "El tunante lagunero",
+    "El vagabundo",
+    "El último romántico",
+    "Ella",
+    "Embrujo",
+    "Enamorado",
+    "Entre la tierra y el cielo",
+    "Entre sonrisas y flores",
+    "Escándalo",
+    "Esperanza",
+    "Esta tarde vi llover",
+    "Estoy contento",
+    "Estudiantina Canaria",
+    "Estudiantina en tu reja",
+    "Fina estampa",
+    "Flor de azalea",
+    "Fonseca",
+    "Fuego bajo tu piel",
+    "Gitanitos y morenos",
+    "Guadalajara",
+    "Hasta siempre, comandante",
+    "Historia de un amor",
+    "Horas de ronda",
+    "Háblame",
+    "Isa de la ventana",
+    "Isa de los cantos canarios",
+    "Isa de ronda",
+    "Junto a la antigua",
+    "Junto al jagüey",
+    "La Mari Carmen",
+    "La Rondadora",
+    "La barca de oro",
+    "La boliviana",
+    "La caja de música",
+    "La casita de papel",
+    "La de ingenieros llegó",
+    "La flor de la canela",
+    "La gallina turuleca",
+    "La guitarra y bandurria",
+    "La hiedra",
+    "La matinatta",
+    "La nave del olvido",
+    "La ovejita lucera",
+    "La paloma",
+    "La pandereta",
+    "La playa",
+    "La sitiera",
+    "La tuna de España",
+    "La uva",
+    "La valencianeta",
+    "La última noche",
+    "Lamento Borincano",
+    "Las hojas muertas",
+    "Las mañanitas",
+    "Las palmeras",
+    "Las plazas de mi Sevilla",
+    "Levántate morenita",
+    "Limeña",
+    "Lisboa antigua",
+    "Los Reyes Magos",
+    "Los niños del pireo",
+    "Los tunos españoles",
+    "Luna de miel",
+    "Luna tucumana",
+    "Madrid",
+    "Maite",
+    "Mamen",
+    "Mar y cielo",
+    "Mariposita",
+    "María",
+    "María Isabel",
+    "María La Portuguesa",
+    "Me voy p'al pueblo",
+    "Memorias de una vieja canción",
+    "Merceditas",
+    "Mi buen amor",
+    "Mi cafetal",
+    "Mi jaca",
+    "Minero boliviano",
+    "Morenita verde luna",
+    "Muchachita sabanera",
+    "Mujer",
+    "Mujeres Divinas",
+    "Muñequita linda",
+    "México lindo",
+    "Mía (guaranía)",
+    "Naranjitay",
+    "No puede ser",
+    "No te vayas de Navarra",
+    "Noche hermosa",
+    "Noche lóbrega",
+    "Noches con la tuna",
+    "Nosotros",
+    "Nube gris",
+    "Nunca jamás",
+    "O sole mío",
+    "Oliñas veñen",
+    "Oropel",
+    "Palmero sube a la palma",
+    "Paloma valenciana",
+    "Para mí",
+    "Parranda canaria",
+    "Payador",
+    "Perdón",
+    "Perfidia",
+    "Piel canela",
+    "Piropos",
+    "Polca Canaria",
+    "Popurrí Rumbas",
+    "Popurrí de La Bamba",
+    "Popurrí de la gallina",
+    "Popurrí vasco",
+    "Preciosa",
+    "Puerto de Santa Cruz",
+    "Párate",
+    "Que nadie sepa mi sufrir",
+    "Que suene la banda",
+    "Queda la ilusión",
+    "Qué mala suerte tengo",
+    "Recuerdos de Ipacaray",
+    "Recuerdos de ti",
+    "Regresa a mí",
+    "Reina del Tamarugal",
+    "Reloj",
+    "Romances del Mediterráneo",
+    "Rumor en los balcones",
+    "Sabor a mí",
+    "Salamanca",
+    "Sapo cancionero",
+    "Se me olvidó otra vez",
+    "Se oye un canto en Santa Cruz",
+    "Serenata huasteca",
+    "Sesenta granaderos",
+    "Si vas a Calatayud",
+    "Siboney",
+    "Silencio",
+    "Soledad de la noche",
+    "Sombras nada más",
+    "Somos",
+    "Son mexicano (Son de la negra)",
+    "Soy cordobés",
+    "Te lo voy a decir cantando",
+    "Tierra",
+    "Toda una vida",
+    "Trasnochados espineles",
+    "Tres veces guapa",
+    "Tuna Cordobesa",
+    "Tuna compostelana",
+    "Un montón de estrellas",
+    "Un paseo por las nubes",
+    "Vaca",
+    "Vagabundo por Santa Cruz",
+    "Valencia",
+    "Valladolid",
+    "Vallisoletana",
+    "Vampiro",
+    "Ven, Cirila, ven",
+    "Verbena de San Cayetano",
+    "Vereda tropical",
+    "Violetas imperiales",
+    "Viva el pasodoble",
+    "Volver",
+    "Y viva España",
+    "Yo no me caso, compadre",
+    "Y…",
+    "Zamba de mi esperanza",
+    "Ámame",
+    "Échame a mi la culpa",
+    "Ódiame"
+  ],
+  "manual_review": [
+    {
+      "title": "A mi palomita",
+      "song": "A mi palomita",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.838
+    },
+    {
+      "title": "Acongójame",
+      "song": "Acongójame",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.978
+    },
+    {
+      "title": "Adiós a la llanera",
+      "song": "Adiós a la llanera",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.792
+    },
+    {
+      "title": "Adiós con el corazón",
+      "song": "Adiós con el corazón",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.509
+    },
+    {
+      "title": "Alforja campesina",
+      "song": "Alforja Campesina",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.966
+    },
+    {
+      "title": "Alfonsina y el mar",
+      "song": "Alfonsina y el mar",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.991
+    },
+    {
+      "title": "Algo contigo",
+      "song": "Algo contigo",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.862
+    },
+    {
+      "title": "Alma llanera",
+      "song": "Alma llanera",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.849
+    },
+    {
+      "title": "Amalia Rosa",
+      "song": "Amalia Rosa",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Amapola",
+      "song": "Amapola",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.971
+    },
+    {
+      "title": "Amelia",
+      "song": "Amelia",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.894
+    },
+    {
+      "title": "Los amores de Ana",
+      "song": "Los amores de Ana",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.998
+    },
+    {
+      "title": "Amor y fiesta",
+      "song": "Amor y Fiesta",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.869
+    },
+    {
+      "title": "Amoríos en el molino",
+      "song": "Amoríos en el molino",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.989
+    },
+    {
+      "title": "Amorosa guajira",
+      "song": "Amorosa Guajira",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.898
+    },
+    {
+      "title": "El andariego",
+      "song": "El andariego",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.718
+    },
+    {
+      "title": "Angelitos negros",
+      "song": "Angelitos negros",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.907
+    },
+    {
+      "title": "Ansiedad",
+      "song": "Ansiedad",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.848
+    },
+    {
+      "title": "Así es mi Granada",
+      "song": "Así es mi Granada",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.747
+    },
+    {
+      "title": "La aurora",
+      "song": "La Aurora",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.636
+    },
+    {
+      "title": "Balada del marino",
+      "song": "La balada del marino",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.884
+    },
+    {
+      "title": "La bella Lola",
+      "song": "La bella Lola",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Bendita mi tierra guanche",
+      "song": "Bendita mi tierra guanche",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.826
+    },
+    {
+      "title": "Bésame morenita",
+      "song": "Bésame Morenita",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.754
+    },
+    {
+      "title": "Bésame mucho",
+      "song": "Bésame mucho",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.877
+    },
+    {
+      "title": "La bikina",
+      "song": "La Bikina",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.808
+    },
+    {
+      "title": "La calesera (Pasacalles de los chisperos)",
+      "song": "Pasacalle de los chisperos (La Calesera)",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.929
+    },
+    {
+      "title": "Caminemos",
+      "song": "Caminemos",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.794
+    },
+    {
+      "title": "Canción de orfeo",
+      "song": "Canción de orfeo",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.999
+    },
+    {
+      "title": "Candombe para José",
+      "song": "Candombe para José",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.985
+    },
+    {
+      "title": "Cántame un pasodoble español",
+      "song": "Cántame un pasodoble español",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.897
+    },
+    {
+      "title": "Cielito lindo",
+      "song": "Cielito lindo",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.775
+    },
+    {
+      "title": "Las cintas de mi capa",
+      "song": "Las cintas de mi capa",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.987
+    },
+    {
+      "title": "Clavelitos",
+      "song": "Clavelitos",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.962
+    },
+    {
+      "title": "Colombianas",
+      "song": "Las colombianas",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.89
+    },
+    {
+      "title": "Cómo llora una estrella",
+      "song": "Cómo llora una estrella",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "m",
+      "song": "m",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Contigo aprendí",
+      "song": "Contigo aprendí",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.978
+    },
+    {
+      "title": "Cordobesita",
+      "song": "Cordobesita",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.994
+    },
+    {
+      "title": "Cuando te encuentres sola",
+      "song": "Cuando te encuentres sola (Amar)",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.863
+    },
+    {
+      "title": "Cumbres del Teide",
+      "song": "Cumbres del Teide",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.679
+    },
+    {
+      "title": "Despierta",
+      "song": "Despierta",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.361
+    },
+    {
+      "title": "Dos cruces",
+      "song": "Dos cruces",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.847
+    },
+    {
+      "title": "Dos palomitas",
+      "song": "Dos palomitas",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.354
+    },
+    {
+      "title": "Dos puntas",
+      "song": "Dos puntas",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.79
+    },
+    {
+      "title": "Elsa",
+      "song": "Elsa",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.713
+    },
+    {
+      "title": "Envidia",
+      "song": "Envidia",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.807
+    },
+    {
+      "title": "Española",
+      "song": "Española",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.766
+    },
+    {
+      "title": "Espinita",
+      "song": "La espinita",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.777
+    },
+    {
+      "title": "Estampa cumanesa (Polo margariteño)",
+      "song": "Estampa cumanesa",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Estrellita del sur",
+      "song": "Estrellita del sur",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.493
+    },
+    {
+      "title": "Estudiantina andaluza",
+      "song": "Estudiantina andaluza",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.848
+    },
+    {
+      "title": "Estudiantina madrileña",
+      "song": "Estudiantina madrileña",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.904
+    },
+    {
+      "title": "Estudiantina portuguesa",
+      "song": "Estudiantina portuguesa",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.865
+    },
+    {
+      "title": "La feria",
+      "song": "La feria",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.797
+    },
+    {
+      "title": "La fiesta de San Benito",
+      "song": "La fiesta de San Benito",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.849
+    },
+    {
+      "title": "Flor de ausencia",
+      "song": "Flor de Ausencia",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.881
+    },
+    {
+      "title": "Flor marchita",
+      "song": "Flor marchita",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.951
+    },
+    {
+      "title": "Francisco alegre",
+      "song": "Francisco alegre",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.978
+    },
+    {
+      "title": "Galopera",
+      "song": "Galopera",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.603
+    },
+    {
+      "title": "Gaudeamus igitur",
+      "song": "Gaudeamus Igitur",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Gibraltareña",
+      "song": "Gibraltareña",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "La golondrina",
+      "song": "La golondrina",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.277
+    },
+    {
+      "title": "Las golondrinas",
+      "song": "La golondrina",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.647
+    },
+    {
+      "title": "Granada",
+      "song": "Granada",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.972
+    },
+    {
+      "title": "Guantanamera",
+      "song": "Guantanamera",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.661
+    },
+    {
+      "title": "Habaneras de Cádiz",
+      "song": "Habaneras de Cádiz",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.746
+    },
+    {
+      "title": "Hoy estoy aquí",
+      "song": "Hoy estoy aquí",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.837
+    },
+    {
+      "title": "Imágenes de ayer",
+      "song": "Imágenes de ayer",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.896
+    },
+    {
+      "title": "Isa del candidito",
+      "song": "Isa del candidito",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.874
+    },
+    {
+      "title": "Islas Canarias",
+      "song": "Islas Canarias",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.881
+    },
+    {
+      "title": "Jamás, jamás",
+      "song": "Jamás, Jamás",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.656
+    },
+    {
+      "title": "Júrame",
+      "song": "Júrame",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.779
+    },
+    {
+      "title": "Lágrimas negras",
+      "song": "Lágrimas negras",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.766
+    },
+    {
+      "title": "Llévatela",
+      "song": "Llévatela",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.97
+    },
+    {
+      "title": "Llorarán las estrellas",
+      "song": "Llorarán las estrellas",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.757
+    },
+    {
+      "title": "Lo dudo",
+      "song": "Lo dudo",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.898
+    },
+    {
+      "title": "Luna de España",
+      "song": "Luna de España",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.8
+    },
+    {
+      "title": "Madrigal",
+      "song": "Madrigal",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.9
+    },
+    {
+      "title": "Madrina",
+      "song": "Madrina",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.647
+    },
+    {
+      "title": "Magdalena",
+      "song": "Magdalena",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.623
+    },
+    {
+      "title": "Maitechu mía",
+      "song": "Maitechu mia",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.744
+    },
+    {
+      "title": "Malagueña",
+      "song": "Malagueña",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.833
+    },
+    {
+      "title": "El Manolo",
+      "song": "El Manolo",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.594
+    },
+    {
+      "title": "María Chuchena",
+      "song": "María Chuchena",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.986
+    },
+    {
+      "title": "María dolores",
+      "song": "María Dolores",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.861
+    },
+    {
+      "title": "Maribel",
+      "song": "Maribel",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.97
+    },
+    {
+      "title": "Mariposa",
+      "song": "Mariposa",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.694
+    },
+    {
+      "title": "La media vuelta",
+      "song": "La media vuelta",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.858
+    },
+    {
+      "title": "La melitona",
+      "song": "La melitona",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.987
+    },
+    {
+      "title": "Mi viejo San Juan",
+      "song": "En mi viejo San Juan",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.853
+    },
+    {
+      "title": "Mía",
+      "song": "Mía",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Mis noches sin ti",
+      "song": "Mis noches sin ti",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.806
+    },
+    {
+      "title": "Moliendo café",
+      "song": "Moliendo café",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.849
+    },
+    {
+      "title": "La morena de mi copla",
+      "song": "La morena de mi copla",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.773
+    },
+    {
+      "title": "Morenita mía",
+      "song": "Morenita mía",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.761
+    },
+    {
+      "title": "Morucha",
+      "song": "Morucha",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Motivo",
+      "song": "Motivos",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.687
+    },
+    {
+      "title": "El muerto vivo",
+      "song": "El muerto vivo",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.855
+    },
+    {
+      "title": "Mujer mediterránea",
+      "song": "Mujer Mediterránea",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.857
+    },
+    {
+      "title": "La muralla",
+      "song": "La muralla",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.861
+    },
+    {
+      "title": "Noche perfumada",
+      "song": "Noche perfumada",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.886
+    },
+    {
+      "title": "Noche plateada",
+      "song": "Noche plateada",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.86
+    },
+    {
+      "title": "Noches de Cartagena",
+      "song": "Noches de Cartagena",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Noches de leyenda",
+      "song": "Noches de leyenda",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Nostalgias",
+      "song": "Nostalgias",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.79
+    },
+    {
+      "title": "Obsesión",
+      "song": "Obsesión",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Ojos de España",
+      "song": "Ojos de España",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.89
+    },
+    {
+      "title": "El pájaro chogüí",
+      "song": "Pájaro Chogüi",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.87
+    },
+    {
+      "title": "Paloma mensajera",
+      "song": "Paloma mensajera",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.843
+    },
+    {
+      "title": "El parrandero",
+      "song": "El parrandero",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.797
+    },
+    {
+      "title": "Pasacalles de garita",
+      "song": "Pasacalles de garita",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.799
+    },
+    {
+      "title": "El pastorcillo",
+      "song": "Pastorcillo",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.861
+    },
+    {
+      "title": "Pepito, mi corazón",
+      "song": "Pepito, mi corazón",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Pescador de morenas",
+      "song": "Pescador de morenas",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.897
+    },
+    {
+      "title": "Popurrí en DO",
+      "song": "Popurrí en DO",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Por una cabeza",
+      "song": "Por una cabeza",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Princesita de ojos azules",
+      "song": "Princesita de ojos azules",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "La pulga",
+      "song": "La pulga",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Qué será de ti",
+      "song": "Qué será de ti",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Quiéreme mucho",
+      "song": "Quiéreme mucho",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.707
+    },
+    {
+      "title": "Recuerdos bolivianos",
+      "song": "Recuerdos Bolivianos",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.749
+    },
+    {
+      "title": "Regálame esta noche",
+      "song": "Regálame esta noche",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.802
+    },
+    {
+      "title": "El Rey",
+      "song": "El rey",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.871
+    },
+    {
+      "title": "Romanza de la papilla",
+      "song": "Romanza de la papilla",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.72
+    },
+    {
+      "title": "Ronda de estrellas",
+      "song": "Ronda de las estrellas",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.76
+    },
+    {
+      "title": "Ronda del Firulí",
+      "song": "Ronda del firulí",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Ronda del silbido",
+      "song": "Ronda del silbidito",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.757
+    },
+    {
+      "title": "Rondalla",
+      "song": "Rondalla",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.838
+    },
+    {
+      "title": "Rosa de Cuba",
+      "song": "Rosa de Cuba",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.974
+    },
+    {
+      "title": "Sebastopol",
+      "song": "Sebastopol",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.627
+    },
+    {
+      "title": "Serenata a la mezquita",
+      "song": "Serenata a la Mezquita",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Serenata de aldea",
+      "song": "Serenata de aldea",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.764
+    },
+    {
+      "title": "Serenata tapatía",
+      "song": "Serenata tapatía",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Sevillanas para conquistar",
+      "song": "Sevillanas para conquistar",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Sin ti",
+      "song": "Sin ti",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.8
+    },
+    {
+      "title": "Si tú me dices ven",
+      "song": "Lodo (Si tu me dices ven...)",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.784
+    },
+    {
+      "title": "La sirena",
+      "song": "La Sirena",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.845
+    },
+    {
+      "title": "Solamente una vez",
+      "song": "Solamente una vez",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.888
+    },
+    {
+      "title": "Solo",
+      "song": "Solo",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Sombrero cordobés",
+      "song": "Sombrero cordobés",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.881
+    },
+    {
+      "title": "Son borinqueño",
+      "song": "Son borinqueño",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.747
+    },
+    {
+      "title": "Son tus perjúmenes",
+      "song": "Son tus perfúmenes",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "Son de la loma",
+      "song": "Son de la loma",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.734
+    },
+    {
+      "title": "Te llevaré una rosa",
+      "song": "Te llevaré una rosa",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Torrevieja",
+      "song": "Torrevieja",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.684
+    },
+    {
+      "title": "La tuna pasa",
+      "song": "La tuna pasa",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.886
+    },
+    {
+      "title": "Tus ojos",
+      "song": "Tus ojos",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.236
+    },
+    {
+      "title": "Una aventura más",
+      "song": "Una aventura más",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.756
+    },
+    {
+      "title": "Uno",
+      "song": "Uno",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.773
+    },
+    {
+      "title": "Verde campiña",
+      "song": "Verde campiña",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.0
+    },
+    {
+      "title": "La viajera",
+      "song": "La viajerita",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.622
+    },
+    {
+      "title": "La viajerita",
+      "song": "La viajerita",
+      "reason": "No hay una versión actual con la misma secuencia verificable de acordes.",
+      "best_lyric_similarity": 0.214
+    },
+    {
+      "title": "Virgen de amor",
+      "song": "Virgen de amor",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.799
+    },
+    {
+      "title": "Yo te diré",
+      "song": "Yo te diré",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.821
+    },
+    {
+      "title": "Yo quiero ser rondador",
+      "song": "Yo quiero ser rondador",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.797
+    },
+    {
+      "title": "Yo vendo unos ojos negros",
+      "song": "Yo vendo unos ojos negros",
+      "reason": "Coinciden los acordes, pero la letra tiene similitud inferior al umbral o hay versiones ambiguas.",
+      "best_lyric_similarity": 0.85
+    },
+    {
+      "title": "Brindis 1",
+      "song": "Brindis 1",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Brindis 2",
+      "song": "Brindis 2",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Brindis 3",
+      "song": "Brindis 3",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Brindis 4",
+      "song": "Brindis 4",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    },
+    {
+      "title": "Presentación del Absurdo",
+      "song": "Presentación del Absurdo",
+      "reason": "La entrada del Word no contiene acordes verificables."
+    }
+  ],
+  "method": "Enable fixed-width, non-wrapping chord rendering only when one existing version has an identical ordered chord signature, lyric similarity >= 0.90, and exact chord-row indentation. Existing song content is not rewritten.",
+  "backup": "backups/pre_word_positions_20261027"
+}

@@ -1,0 +1,1098 @@
+{
+  "indexLinks": 170,
+  "eligible": [
+    {
+      "id": "A0019",
+      "sourceTitle": "AsÃ­ es mi Granada",
+      "projectTitle": "Así es mi Granada",
+      "mode": "new UPV version",
+      "tables": 26,
+      "rowCells": 66,
+      "chords": 56
+    },
+    {
+      "id": "A0026",
+      "sourceTitle": "AdiÃ³s a la llanera",
+      "projectTitle": "Adiós a la llanera",
+      "mode": "alignment for existing chord version",
+      "tables": 18,
+      "rowCells": 45,
+      "chords": 35
+    },
+    {
+      "id": "A0029",
+      "sourceTitle": "A mi palomita",
+      "projectTitle": "A mi palomita",
+      "mode": "new UPV version",
+      "tables": 23,
+      "rowCells": 49,
+      "chords": 41
+    },
+    {
+      "id": "A0030",
+      "sourceTitle": "AdiÃ³s con el corazÃ³n",
+      "projectTitle": "Adiós con el corazón",
+      "mode": "alignment for existing chord version",
+      "tables": 26,
+      "rowCells": 73,
+      "chords": 47
+    },
+    {
+      "id": "A0031",
+      "sourceTitle": "Amarraditos",
+      "projectTitle": "Amarraditos",
+      "mode": "alignment for existing chord version",
+      "tables": 20,
+      "rowCells": 65,
+      "chords": 45
+    },
+    {
+      "id": "A0033",
+      "sourceTitle": "Angelitos negros",
+      "projectTitle": "Angelitos negros",
+      "mode": "alignment for existing chord version",
+      "tables": 24,
+      "rowCells": 60,
+      "chords": 38
+    },
+    {
+      "id": "A0048",
+      "sourceTitle": "Asturias",
+      "projectTitle": "Asturias",
+      "mode": "alignment for existing chord version",
+      "tables": 12,
+      "rowCells": 33,
+      "chords": 28
+    },
+    {
+      "id": "B0017",
+      "sourceTitle": "La banda",
+      "projectTitle": "La banda",
+      "mode": "new UPV version",
+      "tables": 43,
+      "rowCells": 65,
+      "chords": 24
+    },
+    {
+      "id": "B0025",
+      "sourceTitle": "La barca",
+      "projectTitle": "La barca",
+      "mode": "alignment for existing chord version",
+      "tables": 16,
+      "rowCells": 44,
+      "chords": 39
+    },
+    {
+      "id": "B0026",
+      "sourceTitle": "Bendita mi tierra guanche",
+      "projectTitle": "Bendita mi tierra guanche",
+      "mode": "new UPV version",
+      "tables": 19,
+      "rowCells": 51,
+      "chords": 38
+    },
+    {
+      "id": "C0031",
+      "sourceTitle": "CÃ¡ntame un pasodoble espaÃ±ol",
+      "projectTitle": "Cántame un pasodoble español",
+      "mode": "alignment for existing chord version",
+      "tables": 26,
+      "rowCells": 59,
+      "chords": 33
+    },
+    {
+      "id": "D0019",
+      "sourceTitle": "De colores",
+      "projectTitle": "De colores",
+      "mode": "alignment for existing chord version",
+      "tables": 16,
+      "rowCells": 30,
+      "chords": 16
+    },
+    {
+      "id": "E0018",
+      "sourceTitle": "Estrella de la Noche",
+      "projectTitle": "Estrella de la Noche",
+      "mode": "alignment for existing chord version",
+      "tables": 15,
+      "rowCells": 40,
+      "chords": 25
+    },
+    {
+      "id": "G0004",
+      "sourceTitle": "GibraltareÃ±a",
+      "projectTitle": "Gibraltareña",
+      "mode": "alignment for existing chord version",
+      "tables": 13,
+      "rowCells": 25,
+      "chords": 15
+    },
+    {
+      "id": "I0004",
+      "sourceTitle": "Islas Canarias",
+      "projectTitle": "Islas Canarias",
+      "mode": "alignment for existing chord version",
+      "tables": 28,
+      "rowCells": 70,
+      "chords": 51
+    },
+    {
+      "id": "J0001",
+      "sourceTitle": "JamÃ¡s, JamÃ¡s",
+      "projectTitle": "Jamás, Jamás",
+      "mode": "new UPV version",
+      "tables": 25,
+      "rowCells": 53,
+      "chords": 29
+    },
+    {
+      "id": "M0020",
+      "sourceTitle": "Moliendo cafÃ©",
+      "projectTitle": "Moliendo café",
+      "mode": "alignment for existing chord version",
+      "tables": 10,
+      "rowCells": 25,
+      "chords": 18
+    },
+    {
+      "id": "M0033",
+      "sourceTitle": "La media vuelta",
+      "projectTitle": "La media vuelta",
+      "mode": "alignment for existing chord version",
+      "tables": 28,
+      "rowCells": 90,
+      "chords": 62
+    },
+    {
+      "id": "M0048",
+      "sourceTitle": "Mira que eres linda",
+      "projectTitle": "Mira que eres linda",
+      "mode": "alignment for existing chord version",
+      "tables": 13,
+      "rowCells": 33,
+      "chords": 20
+    },
+    {
+      "id": "M0052",
+      "sourceTitle": "El muerto vivo",
+      "projectTitle": "El muerto vivo",
+      "mode": "alignment for existing chord version",
+      "tables": 24,
+      "rowCells": 70,
+      "chords": 46
+    },
+    {
+      "id": "N0006",
+      "sourceTitle": "Noche de ronda",
+      "projectTitle": "Noche de ronda",
+      "mode": "alignment for existing chord version",
+      "tables": 16,
+      "rowCells": 36,
+      "chords": 22
+    },
+    {
+      "id": "N0016",
+      "sourceTitle": "Noches de leyenda/Murcia",
+      "projectTitle": "Noches de leyenda/Murcia",
+      "mode": "alignment for existing chord version",
+      "tables": 22,
+      "rowCells": 70,
+      "chords": 61
+    },
+    {
+      "id": "O0006",
+      "sourceTitle": "ObsesiÃ³n",
+      "projectTitle": "Obsesión",
+      "mode": "alignment for existing chord version",
+      "tables": 21,
+      "rowCells": 66,
+      "chords": 45
+    },
+    {
+      "id": "P0033",
+      "sourceTitle": "El parrandero",
+      "projectTitle": "El parrandero",
+      "mode": "alignment for existing chord version",
+      "tables": 12,
+      "rowCells": 30,
+      "chords": 19
+    },
+    {
+      "id": "P0034",
+      "sourceTitle": "Porompompero",
+      "projectTitle": "Porompompero",
+      "mode": "alignment for existing chord version",
+      "tables": 33,
+      "rowCells": 42,
+      "chords": 10
+    },
+    {
+      "id": "P0048",
+      "sourceTitle": "Por la calle de AlcalÃ¡",
+      "projectTitle": "Por la calle de Alcalá",
+      "mode": "alignment for existing chord version",
+      "tables": 30,
+      "rowCells": 47,
+      "chords": 19
+    },
+    {
+      "id": "R0027",
+      "sourceTitle": "Rosa de Cuba",
+      "projectTitle": "Rosa de Cuba",
+      "mode": "alignment for existing chord version",
+      "tables": 18,
+      "rowCells": 45,
+      "chords": 27
+    },
+    {
+      "id": "R0028",
+      "sourceTitle": "El rey",
+      "projectTitle": "El rey",
+      "mode": "alignment for existing chord version",
+      "tables": 14,
+      "rowCells": 26,
+      "chords": 12
+    },
+    {
+      "id": "S0009",
+      "sourceTitle": "La Sirena",
+      "projectTitle": "La Sirena",
+      "mode": "alignment for existing chord version",
+      "tables": 20,
+      "rowCells": 28,
+      "chords": 9
+    },
+    {
+      "id": "T0019",
+      "sourceTitle": "La tuna pasa",
+      "projectTitle": "La tuna pasa",
+      "mode": "new UPV version",
+      "tables": 11,
+      "rowCells": 20,
+      "chords": 10
+    },
+    {
+      "id": "V0005",
+      "sourceTitle": "La viajerita",
+      "projectTitle": "La viajerita",
+      "mode": "alignment for existing chord version",
+      "tables": 24,
+      "rowCells": 55,
+      "chords": 38
+    },
+    {
+      "id": "Y0005",
+      "sourceTitle": "Yolanda",
+      "projectTitle": "Yolanda",
+      "mode": "new UPV version",
+      "tables": 25,
+      "rowCells": 33,
+      "chords": 15
+    }
+  ],
+  "review": [
+    {
+      "id": "A0002",
+      "sourceTitle": "AcurrÃºcame",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0003",
+      "sourceTitle": "La Adelita",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0004",
+      "sourceTitle": "Adoro",
+      "projectTitle": "Adoro",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0005",
+      "sourceTitle": "Agua del pozo",
+      "projectTitle": "Agua del pozo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0008",
+      "sourceTitle": "Alfonsina y el mar",
+      "projectTitle": "Alfonsina y el mar",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0009",
+      "sourceTitle": "Algo contigo",
+      "projectTitle": "Algo contigo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0010",
+      "sourceTitle": "Alicantina",
+      "projectTitle": "Alicantina",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0011",
+      "sourceTitle": "Alma llanera",
+      "projectTitle": "Alma llanera",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0012",
+      "sourceTitle": "Alma, corazÃ³n y vida",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0013",
+      "sourceTitle": "Amalia",
+      "projectTitle": "Amalia",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0014",
+      "sourceTitle": "Amapola",
+      "projectTitle": "Amapola",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0015",
+      "sourceTitle": "Amelia",
+      "projectTitle": "Amelia",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0018",
+      "sourceTitle": "Ansiedad",
+      "projectTitle": "Ansiedad",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0020",
+      "sourceTitle": "La Aurora",
+      "projectTitle": "La Aurora",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0021",
+      "sourceTitle": "AsÃ­ es Lima",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0022",
+      "sourceTitle": "AgÃ¡chate el sombrerito",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0028",
+      "sourceTitle": "Amor y Fiesta",
+      "projectTitle": "Amor y Fiesta",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0032",
+      "sourceTitle": "Amigo",
+      "projectTitle": "Amigo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0034",
+      "sourceTitle": "Aquella tarde",
+      "projectTitle": "Aquella tarde",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0035",
+      "sourceTitle": "Los amores de Ana",
+      "projectTitle": "Los amores de Ana",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0038",
+      "sourceTitle": "Asturianina",
+      "projectTitle": "Asturianina",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0040",
+      "sourceTitle": "Ave MarÃ­a no Morro",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "A0043",
+      "sourceTitle": "Adios Granada",
+      "projectTitle": "Adios Granada",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "A0059",
+      "sourceTitle": "Ayer",
+      "projectTitle": "Ayer",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0001",
+      "sourceTitle": "La balada del marino",
+      "projectTitle": "La balada del marino",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0002",
+      "sourceTitle": "Barrio brujo",
+      "projectTitle": "Barrio brujo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0003",
+      "sourceTitle": "Basura",
+      "projectTitle": "Basura",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0005",
+      "sourceTitle": "El beso",
+      "projectTitle": "El beso",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0006",
+      "sourceTitle": "El borrachito",
+      "projectTitle": "El borrachito",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0007",
+      "sourceTitle": "Barlovento",
+      "projectTitle": "Barlovento",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0009",
+      "sourceTitle": "La barca de oro",
+      "projectTitle": "La barca de oro",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0013",
+      "sourceTitle": "La Bikina",
+      "projectTitle": "La Bikina",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "B0016",
+      "sourceTitle": "BÃ©same mucho",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0002",
+      "sourceTitle": "Calles sin rumbo",
+      "projectTitle": "Calles sin rumbo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0004",
+      "sourceTitle": "Callecita encendida",
+      "projectTitle": "Callecita encendida",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0005",
+      "sourceTitle": "Caminemos",
+      "projectTitle": "Caminemos",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0007",
+      "sourceTitle": "CanciÃ³n de orfeo",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0009",
+      "sourceTitle": "Candombe para JosÃ©",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0010",
+      "sourceTitle": "Cantinero de Cuba",
+      "projectTitle": "Cantinero de Cuba",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0012",
+      "sourceTitle": "Carolina",
+      "projectTitle": "Carolina",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0014",
+      "sourceTitle": "El chotis del feo",
+      "projectTitle": "El chotis del feo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0017",
+      "sourceTitle": "Las cintas de mi capa",
+      "projectTitle": "Las cintas de mi capa",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0019",
+      "sourceTitle": "Clavelitos",
+      "projectTitle": "Clavelitos",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0022",
+      "sourceTitle": "Contigo aprendÃ­",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0023",
+      "sourceTitle": "CorazÃ³n",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0025",
+      "sourceTitle": "Cuando salÃ­ de Cuba",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "C0027",
+      "sourceTitle": "La copla del rondador",
+      "projectTitle": "La copla del rondador",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0028",
+      "sourceTitle": "Cuando te encuentres sola (Amar)",
+      "projectTitle": "Cuando te encuentres sola (Amar)",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0033",
+      "sourceTitle": "Cumbres del Teide",
+      "projectTitle": "Cumbres del Teide",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0035",
+      "sourceTitle": "Dos cruces",
+      "projectTitle": "Dos cruces",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "C0053",
+      "sourceTitle": "Las colombianas",
+      "projectTitle": "Las colombianas",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "D0001",
+      "sourceTitle": "Dama de EspaÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "D0003",
+      "sourceTitle": "Despierta",
+      "projectTitle": "Despierta",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "D0004",
+      "sourceTitle": "Dos palomitas",
+      "projectTitle": "Dos palomitas",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "D0005",
+      "sourceTitle": "Dos puntas",
+      "projectTitle": "Dos puntas",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "D0008",
+      "sourceTitle": "El dÃ­a que me quieras",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "E0001",
+      "sourceTitle": "Esta tarde vi llover",
+      "projectTitle": "Esta tarde vi llover",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "E0003",
+      "sourceTitle": "Ella",
+      "projectTitle": "Ella",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "E0004",
+      "sourceTitle": "En mi viejo San Juan",
+      "projectTitle": "En mi viejo San Juan",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "E0006",
+      "sourceTitle": "EspaÃ±ola",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "E0011",
+      "sourceTitle": "Estudiantina madrileÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "E0012",
+      "sourceTitle": "Estudiantina portuguesa",
+      "projectTitle": "Estudiantina portuguesa",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "E0015",
+      "sourceTitle": "Elsa",
+      "projectTitle": "Elsa",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "E0024",
+      "sourceTitle": "Estrellita del sur",
+      "projectTitle": "Estrellita del sur",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "F0001",
+      "sourceTitle": "La feria",
+      "projectTitle": "La feria",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "F0002",
+      "sourceTitle": "La flor de la canela",
+      "projectTitle": "La flor de la canela",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "F0005",
+      "sourceTitle": "Fonseca",
+      "projectTitle": "Fonseca",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "F0008",
+      "sourceTitle": "Flor de Ausencia",
+      "projectTitle": "Flor de Ausencia",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "G0002",
+      "sourceTitle": "Galopera",
+      "projectTitle": "Galopera",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "G0007",
+      "sourceTitle": "Granada",
+      "projectTitle": "Granada",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "G0008",
+      "sourceTitle": "Guantanamera",
+      "projectTitle": "Guantanamera",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "H0005",
+      "sourceTitle": "La hiedra",
+      "projectTitle": "La hiedra",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "H0006",
+      "sourceTitle": "Horas de ronda",
+      "projectTitle": "Horas de ronda",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "H0007",
+      "sourceTitle": "Hoy estoy aquÃ­",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "I0001",
+      "sourceTitle": "ImÃ¡genes de ayer",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "J0002",
+      "sourceTitle": "La jota de la Dolores",
+      "projectTitle": "La jota de la Dolores",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "L0001",
+      "sourceTitle": "Luna de EspaÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "L0002",
+      "sourceTitle": "LimeÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "L0006",
+      "sourceTitle": "LÃ¡grimas negras",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "L0007",
+      "sourceTitle": "Lodo (Si tu me dices ven...)",
+      "projectTitle": "Lodo (Si tu me dices ven...)",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "L0009",
+      "sourceTitle": "Lamento Borincano",
+      "projectTitle": "Lamento Borincano",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "L0016",
+      "sourceTitle": "LlorarÃ¡n las estrellas",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0001",
+      "sourceTitle": "MarÃ­a Chuchena",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0002",
+      "sourceTitle": "Maracaibo",
+      "projectTitle": "Maracaibo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0003",
+      "sourceTitle": "Madrid",
+      "projectTitle": "Madrid",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0006",
+      "sourceTitle": "Magdalena",
+      "projectTitle": "Magdalena",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0009",
+      "sourceTitle": "MalagueÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0010",
+      "sourceTitle": "El Manolo",
+      "projectTitle": "El Manolo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0012",
+      "sourceTitle": "MarÃ­a Dolores",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0013",
+      "sourceTitle": "MarÃ­a La Portuguesa",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0014",
+      "sourceTitle": "Maribel",
+      "projectTitle": "Maribel",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0021",
+      "sourceTitle": "La morena de mi copla",
+      "projectTitle": "La morena de mi copla",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0025",
+      "sourceTitle": "Muchachita sabanera",
+      "projectTitle": "Muchachita sabanera",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0029",
+      "sourceTitle": "Mis noches sin ti",
+      "projectTitle": "Mis noches sin ti",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0042",
+      "sourceTitle": "Mar y cielo",
+      "projectTitle": "Mar y cielo",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "M0047",
+      "sourceTitle": "Las maÃ±anitas del rey David",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "M0063",
+      "sourceTitle": "Mala persona",
+      "projectTitle": "Mala persona",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "N0001",
+      "sourceTitle": "Naranjitai",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "N0004",
+      "sourceTitle": "No vull que plores mÃ©s",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "N0008",
+      "sourceTitle": "Noche perfumada",
+      "projectTitle": "Noche perfumada",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "N0010",
+      "sourceTitle": "Nube gris",
+      "projectTitle": "Nube gris",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "O0001",
+      "sourceTitle": "Ojos de EspaÃ±a",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "O0003",
+      "sourceTitle": "Oh Mary",
+      "projectTitle": "Oh Mary",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0004",
+      "sourceTitle": "P'a todo el aÃ±o",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "P0005",
+      "sourceTitle": "PÃ¡jaro ChogÃ¼i",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "P0006",
+      "sourceTitle": "Palmeras, Las",
+      "projectTitle": "Palmeras, Las",
+      "reason": "Letra coincidente, pero secuencia de acordes aún no clasificada."
+    },
+    {
+      "id": "P0007",
+      "sourceTitle": "Paloma, La",
+      "projectTitle": "Paloma, La",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0009",
+      "sourceTitle": "Parquecito, El",
+      "projectTitle": "Parquecito, El",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0011",
+      "sourceTitle": "Payador, El",
+      "projectTitle": "Payador, El",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0012",
+      "sourceTitle": "Perfidia",
+      "projectTitle": "Perfidia",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0014",
+      "sourceTitle": "Playa, La",
+      "projectTitle": "Playa, La",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0016",
+      "sourceTitle": "Pastorcillo",
+      "projectTitle": "Pastorcillo",
+      "reason": "Letra coincidente, pero secuencia de acordes aún no clasificada."
+    },
+    {
+      "id": "P0018",
+      "sourceTitle": "Piensa en mi",
+      "projectTitle": "Piensa en mi",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0023",
+      "sourceTitle": "Piel canela",
+      "projectTitle": "Piel canela",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "P0044",
+      "sourceTitle": "Puerto Rico",
+      "projectTitle": "Puerto Rico",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "Q0001",
+      "sourceTitle": "Que nadie sepa mi sufrir",
+      "projectTitle": "Que nadie sepa mi sufrir",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "R0001",
+      "sourceTitle": "Rumor en los balcones",
+      "projectTitle": "Rumor en los balcones",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "R0002",
+      "sourceTitle": "El reloj",
+      "projectTitle": "El reloj",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "R0007",
+      "sourceTitle": "Ronda del firulÃ­",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "R0008",
+      "sourceTitle": "Ronda del silbidito",
+      "projectTitle": "Ronda del silbidito",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "R0021",
+      "sourceTitle": "Recuerdos Bolivianos",
+      "projectTitle": "Recuerdos Bolivianos",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "S0003",
+      "sourceTitle": "Sebastopol",
+      "projectTitle": "Sebastopol",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "S0008",
+      "sourceTitle": "Silencio",
+      "projectTitle": "Silencio",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "S0019",
+      "sourceTitle": "Somos",
+      "projectTitle": "Somos",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "S0035",
+      "sourceTitle": "Se oye un canto en Santa Cruz",
+      "projectTitle": "Se oye un canto en Santa Cruz",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "T0006",
+      "sourceTitle": "Tuna granadina",
+      "projectTitle": "Tuna granadina",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "T0008",
+      "sourceTitle": "Tus ojos",
+      "projectTitle": "Tus ojos",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "T0013",
+      "sourceTitle": "Tres veces guapa",
+      "projectTitle": "Tres veces guapa",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "U0002",
+      "sourceTitle": "Una aventura mÃ¡s",
+      "reason": "Sin correspondencia única por título normalizado."
+    },
+    {
+      "id": "V0001",
+      "sourceTitle": "Valencia",
+      "projectTitle": "Valencia",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "V0003",
+      "sourceTitle": "Verbena de San Cayetano",
+      "projectTitle": "Verbena de San Cayetano",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "V0009",
+      "sourceTitle": "Virgen de amor",
+      "projectTitle": "Virgen de amor",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "V0019",
+      "sourceTitle": "Volver (Ranchera)",
+      "projectTitle": "Volver (Ranchera)",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "V0020",
+      "sourceTitle": "Voy a apagar la luz",
+      "projectTitle": "Voy a apagar la luz",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "V0021",
+      "sourceTitle": "Vagabundo por Santa Cruz",
+      "projectTitle": "Vagabundo por Santa Cruz",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "Y0001",
+      "sourceTitle": "Yo vendo unos ojos negros",
+      "projectTitle": "Yo vendo unos ojos negros",
+      "reason": "El texto de letra difiere; requiere comparación manual."
+    },
+    {
+      "id": "Y0003",
+      "sourceTitle": "Yo te dirÃ©",
+      "reason": "Sin correspondencia única por título normalizado."
+    }
+  ],
+  "noChordPage": [
+    {
+      "id": "C0015",
+      "title": "Cielito lindo"
+    }
+  ],
+  "errors": [],
+  "counts": {
+    "chordPages": 169,
+    "titleAndLyricVerified": 32,
+    "titleMatchLyricDiffers": 100,
+    "titleNoUniqueMatch": 35,
+    "sameChordSequence": 25,
+    "newChordVersions": 7,
+    "noChordTranscription": 1
+  }
+}
