@@ -1,0 +1,21 @@
+{
+  "catalog_before_sync": 545,
+  "current_sync_entries": 382,
+  "removed_notion_document_entries": 24,
+  "restored_verified_word_songs": 186,
+  "malformed_word_entry_held_for_review": "m (sin letra; campo de acordes solo contiene 37)",
+  "catalog_after_cleanup": 544,
+  "songs_with_multiple_chord_versions": 115,
+  "preserved_recent_text_updates": [
+    "Como Han Pasado los Años",
+    "Habaneras de Cádiz"
+  ],
+  "restored_chord_blocks": [
+    "Mujeres Divinas",
+    "Vals de las mariposas"
+  ],
+  "lyrics_display_fallback": [
+    "A San Roque venimos",
+    "Santo Peregrino"
+  ]
+}
